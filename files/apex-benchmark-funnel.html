@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Free Retirement Plan Benchmark & Fee Analysis | Apex Pension Strategies</title>
+<meta name="description" content="Wondering if your retirement plan is still competitive? Request a free benchmark and fee analysis from Apex Pension Strategies — plan design, fees, and compliance observations compared against similar companies. Helping retirement plans since 2003.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,500;0,600;1,400&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#14233C;       /* ledger navy — primary ink */
+    --navy-deep:#0E1A2E;
+    --day:#F7F8F6;        /* cool daylight — page background */
+    --slate:#5A6678;      /* secondary text */
+    --brass:#B08D3E;      /* accent — rules, highlights, sparingly */
+    --verdigris:#2E6E64;  /* positive delta / success */
+    --line:#DCE0DA;
+    --card:#FFFFFF;
+    --danger:#9C3A2E;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:'Public Sans',system-ui,sans-serif;
+    background:var(--day);
+    color:var(--navy);
+    line-height:1.55;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:1120px;margin:0 auto;padding:0 24px;}
+  .serif{font-family:'Spectral',serif;}
+  .eyebrow{font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--brass);}
+
+  /* ---------- header ---------- */
+  header{border-bottom:1px solid var(--line);background:var(--day);}
+  .hd{display:flex;align-items:center;justify-content:space-between;padding:18px 0;}
+  .logo{font-family:'Spectral',serif;font-weight:600;font-size:20px;letter-spacing:.01em;color:var(--navy);text-decoration:none;}
+  .logo span{color:var(--brass);}
+  .hd-right{font-size:13px;color:var(--slate);}
+  .hd-right b{color:var(--navy);}
+  @media(max-width:640px){.hd-right{display:none;}}
+
+  /* ---------- hero ---------- */
+  .hero{padding:64px 0 72px;}
+  .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center;}
+  @media(max-width:880px){.hero-grid{grid-template-columns:1fr;gap:40px;}}
+  h1{font-family:'Spectral',serif;font-weight:500;font-size:clamp(32px,4.6vw,46px);line-height:1.12;letter-spacing:-.01em;margin:14px 0 18px;}
+  h1 em{font-style:italic;color:var(--verdigris);}
+  .lede{font-size:17px;color:var(--slate);max-width:46ch;margin-bottom:26px;}
+  .cta{
+    display:inline-block;background:var(--navy);color:#fff;text-decoration:none;
+    font-weight:600;font-size:15px;padding:14px 26px;border-radius:6px;
+    border:1px solid var(--navy);transition:background .15s ease;
+  }
+  .cta:hover{background:var(--navy-deep);}
+  .cta:focus-visible{outline:3px solid var(--brass);outline-offset:2px;}
+  .cta-sub{display:block;margin-top:10px;font-size:13px;color:var(--slate);}
+
+  /* signature: the sample report card */
+  .report{
+    background:var(--card);border:1px solid var(--line);border-radius:10px;
+    box-shadow:0 18px 40px -28px rgba(20,35,60,.35);
+    padding:22px 24px 24px;position:relative;
+  }
+  .report::before{
+    content:"SAMPLE";position:absolute;top:14px;right:-8px;
+    background:var(--brass);color:#fff;font-size:10px;font-weight:700;letter-spacing:.12em;
+    padding:4px 10px;border-radius:3px 0 0 3px;
+  }
+  .report h3{font-family:'Spectral',serif;font-weight:600;font-size:16px;margin-bottom:2px;}
+  .report .rsub{font-size:12px;color:var(--slate);margin-bottom:18px;}
+  .bench{margin-bottom:16px;}
+  .bench-label{display:flex;justify-content:space-between;font-size:12px;font-weight:600;margin-bottom:6px;}
+  .bench-label .val{font-variant-numeric:tabular-nums;color:var(--slate);font-weight:500;}
+  .bar{height:10px;background:#EEF0EC;border-radius:5px;overflow:hidden;}
+  .bar i{display:block;height:100%;border-radius:5px;width:0;transition:width 1.1s cubic-bezier(.2,.7,.2,1);}
+  .bar .you{background:var(--navy);}
+  .bar .peer{background:var(--brass);}
+  .delta{margin-top:14px;padding-top:14px;border-top:1px dashed var(--line);display:flex;justify-content:space-between;align-items:center;gap:10px;}
+  @media(max-width:480px){.delta{flex-direction:column;align-items:flex-start;gap:2px;}}
+  .delta .d-label{font-size:12px;color:var(--slate);}
+  .delta .d-val{font-family:'Spectral',serif;font-weight:600;font-size:22px;color:var(--verdigris);font-variant-numeric:tabular-nums;}
+  .r-foot{margin-top:14px;font-size:11px;color:var(--slate);}
+  @media (prefers-reduced-motion: reduce){.bar i{transition:none;}}
+
+  /* ---------- trust strip ---------- */
+  .strip{background:var(--navy);color:#E8EBE6;padding:22px 0;}
+  .strip .wrap{display:flex;gap:36px;justify-content:center;flex-wrap:wrap;font-size:14px;}
+  .strip b{color:#fff;}
+  .strip .dot{color:var(--brass);}
+
+  /* ---------- what you receive ---------- */
+  .receive{padding:64px 0 24px;}
+  .sec-head{max-width:62ch;margin-bottom:34px;}
+  h2{font-family:'Spectral',serif;font-weight:500;font-size:clamp(24px,3vw,32px);line-height:1.15;margin-top:10px;}
+  .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}
+  @media(max-width:880px){.cards{grid-template-columns:1fr;}}
+  /* five-deliverable list — mirrors the report's five sections */
+  .deliver{background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden;}
+  .d-row{display:grid;grid-template-columns:54px 1fr;gap:0;border-bottom:1px solid var(--line);}
+  .d-row:last-child{border-bottom:none;}
+  .d-num{background:#EFF1ED;display:flex;align-items:center;justify-content:center;font-family:'Spectral',serif;font-weight:600;font-size:18px;color:var(--navy);border-right:1px solid var(--line);}
+  .d-body{padding:16px 20px;}
+  .d-body h3{font-family:'Spectral',serif;font-weight:600;font-size:16.5px;margin-bottom:3px;}
+  .d-body p{font-size:13.5px;color:var(--slate);}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:20px 20px 22px;}
+  .card h3{font-family:'Spectral',serif;font-weight:600;font-size:17px;margin-bottom:8px;}
+  .card p{font-size:14px;color:var(--slate);}
+  .card .k{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--brass);margin-bottom:10px;}
+
+  /* ---------- how it works ---------- */
+  .how{padding:48px 0 64px;}
+  .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;counter-reset:s;}
+  @media(max-width:880px){.steps{grid-template-columns:1fr;}}
+  .step{border-top:2px solid var(--navy);padding-top:14px;}
+  .step::before{
+    counter-increment:s;content:"Step " counter(s);
+    font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--brass);
+    display:block;margin-bottom:6px;
+  }
+  .step h3{font-family:'Spectral',serif;font-weight:600;font-size:17px;margin-bottom:6px;}
+  .step p{font-size:14px;color:var(--slate);}
+
+  /* ---------- form ---------- */
+  .ask{background:#EFF1ED;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:64px 0;}
+  .ask-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:48px;align-items:start;}
+  @media(max-width:880px){.ask-grid{grid-template-columns:1fr;}}
+  .ask-copy h2{margin-bottom:14px;}
+  .ask-copy p{font-size:15px;color:var(--slate);max-width:44ch;margin-bottom:18px;}
+  .quiet-list{list-style:none;display:grid;gap:10px;font-size:14px;}
+  .quiet-list li{padding-left:22px;position:relative;color:var(--navy);}
+  .quiet-list li::before{content:"";position:absolute;left:0;top:7px;width:8px;height:8px;border-radius:2px;background:var(--verdigris);}
+
+  form{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:26px;box-shadow:0 18px 40px -30px rgba(20,35,60,.3);}
+  .f-head{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:18px;}
+  .f-head h3{font-family:'Spectral',serif;font-weight:600;font-size:19px;}
+  .f-step-ind{font-size:12px;color:var(--slate);font-variant-numeric:tabular-nums;}
+  .f-row{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+  @media(max-width:560px){.f-row{grid-template-columns:1fr;}}
+  .field{margin-bottom:14px;}
+  label{display:block;font-size:13px;font-weight:600;margin-bottom:6px;}
+  label .opt{font-weight:400;color:var(--slate);}
+  input,select{
+    width:100%;padding:11px 12px;font-size:15px;font-family:inherit;color:var(--navy);
+    background:#fff;border:1px solid #C9CFC8;border-radius:6px;
+  }
+  input:focus-visible,select:focus-visible{outline:3px solid rgba(176,141,62,.45);outline-offset:1px;border-color:var(--brass);}
+  .f-actions{display:flex;align-items:center;justify-content:space-between;margin-top:18px;}
+  .btn{
+    background:var(--navy);color:#fff;border:none;border-radius:6px;cursor:pointer;
+    font-family:inherit;font-weight:600;font-size:15px;padding:13px 24px;transition:background .15s ease;
+  }
+  .btn:hover{background:var(--navy-deep);}
+  .btn:focus-visible{outline:3px solid var(--brass);outline-offset:2px;}
+  .btn-ghost{background:none;border:none;color:var(--slate);font-size:14px;cursor:pointer;font-family:inherit;padding:8px;}
+  .btn-ghost:hover{color:var(--navy);}
+  .f-note{margin-top:14px;font-size:12px;color:var(--slate);}
+  .f-error{display:none;color:var(--danger);font-size:13px;margin-top:10px;font-weight:600;}
+  .f-error.show{display:block;}
+  #step2{display:none;}
+  form.step-2 #step1{display:none;}
+  form.step-2 #step2{display:block;}
+
+  /* success state */
+  .success{display:none;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:30px 28px;}
+  .success.show{display:block;}
+  .success h3{font-family:'Spectral',serif;font-weight:600;font-size:22px;margin-bottom:8px;}
+  .success h3 b{color:var(--verdigris);}
+  .success p{font-size:15px;color:var(--slate);margin-bottom:18px;}
+  .next{list-style:none;display:grid;gap:12px;counter-reset:n;}
+  .next li{display:flex;gap:12px;font-size:14px;align-items:flex-start;}
+  .next li::before{
+    counter-increment:n;content:counter(n);flex:none;
+    width:24px;height:24px;border-radius:50%;background:var(--navy);color:#fff;
+    font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;margin-top:1px;
+  }
+
+  /* ---------- about / footer ---------- */
+  .about{padding:56px 0;}
+  .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;}
+  @media(max-width:880px){.about-grid{grid-template-columns:1fr;}}
+  .about p{font-size:15px;color:var(--slate);margin-bottom:12px;}
+  .about .sig{font-family:'Spectral',serif;font-style:italic;font-size:17px;color:var(--navy);}
+  footer{background:var(--navy);color:#B9C2CE;padding:34px 0;font-size:13px;}
+  footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;}
+  footer a{color:#fff;text-decoration:none;}
+  footer a:hover{text-decoration:underline;}
+  .disclaimer{margin-top:14px;font-size:11.5px;color:#8A94A3;max-width:88ch;line-height:1.5;}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap hd">
+    <a class="logo" href="#top">Apex <span>Pension Strategies</span></a>
+    <div class="hd-right">Helping retirement plans since <b>2003</b> &nbsp;·&nbsp; <b>(770) 410-5022</b></div>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow">Free Benchmark &amp; Fee Analysis</span>
+      <h1>Wondering if your retirement plan is still <em>competitive?</em></h1>
+      <p class="lede">Most business owners haven't compared their plan's design, fees, or features since the day it was installed. We'll benchmark yours against similar companies — and show you, in plain English, where it stands.</p>
+      <a class="cta" href="#request">Request my free benchmark</a>
+      <span class="cta-sub">No cost, no obligation. Prepared by credentialed plan specialists.</span>
+    </div>
+    <div class="report" aria-label="Sample benchmark report card">
+      <h3>Plan Benchmark — Report Card</h3>
+      <div class="rsub">Manufacturing co. · 48 participants · illustrative sample</div>
+      <div class="bench">
+        <div class="bench-label"><span>Your plan's all-in cost</span><span class="val">1.42%</span></div>
+        <div class="bar"><i class="you" data-w="84%"></i></div>
+      </div>
+      <div class="bench">
+        <div class="bench-label"><span>Peer median (similar plans)</span><span class="val">1.07%</span></div>
+        <div class="bar"><i class="peer" data-w="63%"></i></div>
+      </div>
+      <div class="delta">
+        <span class="d-label">Potential annual difference, this sample</span>
+        <span class="d-val">$11,300 / yr</span>
+      </div>
+      <div class="r-foot">Illustrative only. Your report reflects your plan's actual design, fees, and features.</div>
+    </div>
+  </div>
+</section>
+
+<div class="strip">
+  <div class="wrap">
+    <span><b>20+ years</b> of plan design &amp; administration</span>
+    <span class="dot">•</span>
+    <span><b>CEBS-credentialed</b> leadership (Wharton)</span>
+    <span class="dot">•</span>
+    <span>401(k) · Cash Balance · <b>ESOP</b> specialists</span>
+  </div>
+</div>
+
+<section class="receive">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">What you receive</span>
+      <h2>Five things, in one plain-English report</h2>
+    </div>
+    <div class="deliver">
+      <div class="d-row"><div class="d-num">1</div><div class="d-body"><h3>Comparison of your plan design against similar companies</h3><p>How your plan's structure stacks up next to peers of your size and industry.</p></div></div>
+      <div class="d-row"><div class="d-num">2</div><div class="d-body"><h3>Review of potential fee savings opportunities</h3><p>Your all-in cost on one line, benchmarked against peer plans — and where the savings sit.</p></div></div>
+      <div class="d-row"><div class="d-num">3</div><div class="d-body"><h3>Identification of plan design improvements</h3><p>Specific changes worth considering — including whether owners and key people could be saving more.</p></div></div>
+      <div class="d-row"><div class="d-num">4</div><div class="d-body"><h3>Observation of any common compliance concerns</h3><p>The routine items we notice — flagged plainly, never alarmist. Well-run plans pass this section.</p></div></div>
+      <div class="d-row"><div class="d-num">5</div><div class="d-body"><h3>Summary report with recommendations</h3><p>Everything above on a single report card, with clear next steps — yours to keep.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="how">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">How it works</span>
+      <h2>Three steps, about twenty minutes of your time</h2>
+    </div>
+    <div class="steps">
+      <div class="step"><h3>Tell us about your plan</h3><p>A few basics — plan type, headcount, rough assets. Two minutes, no documents required to start.</p></div>
+      <div class="step"><h3>We prepare your benchmark</h3><p>Our specialists compare your plan's design and costs against similar companies and summarize what we find.</p></div>
+      <div class="step"><h3>Walk through it together</h3><p>A short call to review the report card and your options. Keep the report either way — it's yours.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="ask" id="request">
+  <div class="wrap ask-grid">
+    <div class="ask-copy">
+      <span class="eyebrow">Request your benchmark</span>
+      <h2>See how your plan compares</h2>
+      <p>Every employer wants to know two things: are we overpaying, and could we be doing better? This answers both — free, and yours to keep.</p>
+      <ul class="quiet-list">
+        <li>Prepared by specialists, not software alone</li>
+        <li>Covers design, fees, features, and compliance observations</li>
+        <li>No obligation — useful even if you never call us again</li>
+      </ul>
+    </div>
+    <div>
+      <form id="benchForm" novalidate>
+        <!-- ============================================================
+             ROUTING (set at kickoff):
+             POST this form's data to the chosen endpoint (CRM webhook,
+             email service, or form handler). Hidden source fields below
+             are auto-populated from URL parameters for attribution.
+             ============================================================ -->
+        <input type="hidden" name="lead_source" id="lead_source" value="direct">
+        <input type="hidden" name="utm_source" id="utm_source" value="">
+        <input type="hidden" name="utm_medium" id="utm_medium" value="">
+        <input type="hidden" name="utm_campaign" id="utm_campaign" value="">
+        <input type="hidden" name="landing_page" id="landing_page" value="benchmark">
+        <!-- honeypot -->
+        <input type="text" name="company_website_hp" id="hp" style="position:absolute;left:-5000px;" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+        <div class="f-head"><h3 id="fTitle">Start your benchmark</h3><span class="f-step-ind" id="fInd">Step 1 of 2</span></div>
+
+        <div id="step1">
+          <div class="f-row">
+            <div class="field"><label for="name">Your name</label><input id="name" name="name" type="text" autocomplete="name" required></div>
+            <div class="field"><label for="company">Company</label><input id="company" name="company" type="text" autocomplete="organization" required></div>
+          </div>
+          <div class="field"><label for="email">Work email</label><input id="email" name="email" type="email" autocomplete="email" required></div>
+          <div class="f-actions">
+            <span class="f-note" style="margin:0;">Takes about two minutes total.</span>
+            <button type="button" class="btn" id="toStep2">Continue</button>
+          </div>
+          <div class="f-error" id="err1">Please add your name, company, and a valid work email.</div>
+        </div>
+
+        <div id="step2">
+          <div class="f-row">
+            <div class="field">
+              <label for="planType">Plan type</label>
+              <select id="planType" name="plan_type" required>
+                <option value="">Select…</option>
+                <option>401(k) / Roth 401(k)</option>
+                <option>401(k) + Profit Sharing</option>
+                <option>Cash Balance / Combo</option>
+                <option>Defined Benefit / Pension</option>
+                <option>ESOP</option>
+                <option>Not sure / Other</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="participants">Participants (approx.)</label>
+              <select id="participants" name="participants" required>
+                <option value="">Select…</option>
+                <option>Under 10</option>
+                <option>10–25</option>
+                <option>26–100</option>
+                <option>101–500</option>
+                <option>500+</option>
+              </select>
+            </div>
+          </div>
+          <div class="f-row">
+            <div class="field">
+              <label for="assets">Plan assets (approx.)</label>
+              <select id="assets" name="plan_assets">
+                <option value="">Select…</option>
+                <option>Under $1M</option>
+                <option>$1M–$5M</option>
+                <option>$5M–$25M</option>
+                <option>$25M+</option>
+                <option>Not sure</option>
+              </select>
+            </div>
+            <div class="field"><label for="provider">Current provider <span class="opt">(optional)</span></label><input id="provider" name="current_provider" type="text"></div>
+          </div>
+          <div class="field">
+            <label for="question">Your biggest question <span class="opt">(optional)</span></label>
+            <select id="question" name="biggest_question">
+              <option value="">Select…</option>
+              <option>Are we overpaying?</option>
+              <option>Could owners/key people save more?</option>
+              <option>Is our plan design still right for us?</option>
+              <option>Service issues with our current provider</option>
+              <option>Exploring cash balance / ESOP</option>
+            </select>
+          </div>
+          <div class="f-actions">
+            <button type="button" class="btn-ghost" id="backTo1">&larr; Back</button>
+            <button type="submit" class="btn">Request my benchmark</button>
+          </div>
+          <div class="f-error" id="err2">Please select your plan type and participant count.</div>
+          <p class="f-note">Your information is used only to prepare your benchmark. No spam, no sharing.</p>
+        </div>
+      </form>
+
+      <div class="success" id="successBox" role="status">
+        <h3>Request received — <b>you're in the queue.</b></h3>
+        <p>Here's exactly what happens next:</p>
+        <ul class="next">
+          <li>A confirmation email is on its way to you now.</li>
+          <li>Our specialists prepare your benchmark — typically within a few business days.</li>
+          <li>We'll reach out to schedule a short walkthrough of your report card. The report is yours to keep either way.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="about">
+  <div class="wrap about-grid">
+    <div>
+      <span class="eyebrow">Who's behind the benchmark</span>
+      <h2>Big-firm standards. Boutique attention.</h2>
+    </div>
+    <div>
+      <p>Apex Pension Strategies has handled the design, administration, consulting, and compliance of qualified retirement plans since 2003 — 401(k), profit sharing, cash balance, defined benefit, and ESOPs, with fiduciary and trustee services through Apex Fiduciary Services.</p>
+      <p class="sig">"We've been helping retirement plans for more than twenty years. Let us show you how yours compares."</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <b style="color:#fff;font-family:'Spectral',serif;">Apex Pension Strategies, Inc.</b><br>
+      (770) 410-5022 · <a href="mailto:info@apexpension.com">info@apexpension.com</a>
+    </div>
+    <div>Atlanta, Georgia · Serving plan sponsors nationwide</div>
+  </div>
+  <div class="wrap disclaimer">
+    The Benchmark &amp; Fee Analysis provides educational observations and general recommendations based on the information you provide and publicly available comparison data. It is not legal, tax, investment, or fiduciary advice, and no client relationship is created by requesting or receiving a report.
+  </div>
+</footer>
+
+<script>
+(function(){
+  // ---- source tagging: capture URL params into hidden fields ----
+  var p = new URLSearchParams(window.location.search);
+  ["utm_source","utm_medium","utm_campaign"].forEach(function(k){
+    var el = document.getElementById(k);
+    if (el && p.get(k)) el.value = p.get(k);
+  });
+  if (p.get("src")) document.getElementById("lead_source").value = p.get("src");
+  else if (p.get("utm_source")) document.getElementById("lead_source").value = p.get("utm_source");
+  else if (document.referrer) { try { document.getElementById("lead_source").value = new URL(document.referrer).hostname; } catch(e){} }
+
+  // ---- animate the sample report bars on view ----
+  var bars = document.querySelectorAll(".bar i");
+  var fill = function(){ bars.forEach(function(b){ b.style.width = b.getAttribute("data-w"); }); };
+  if ("IntersectionObserver" in window) {
+    var io = new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting){ fill(); io.disconnect(); } }); },{threshold:.4});
+    io.observe(document.querySelector(".report"));
+  } else { fill(); }
+
+  // ---- two-step form ----
+  var form = document.getElementById("benchForm");
+  var err1 = document.getElementById("err1"), err2 = document.getElementById("err2");
+  document.getElementById("toStep2").addEventListener("click", function(){
+    var ok = document.getElementById("name").value.trim() &&
+             document.getElementById("company").value.trim() &&
+             /.+@.+\..+/.test(document.getElementById("email").value);
+    err1.classList.toggle("show", !ok);
+    if (!ok) return;
+    form.classList.add("step-2");
+    document.getElementById("fTitle").textContent = "About your plan";
+    document.getElementById("fInd").textContent = "Step 2 of 2";
+  });
+  document.getElementById("backTo1").addEventListener("click", function(){
+    form.classList.remove("step-2");
+    document.getElementById("fTitle").textContent = "Start your benchmark";
+    document.getElementById("fInd").textContent = "Step 1 of 2";
+  });
+  form.addEventListener("submit", function(ev){
+    ev.preventDefault();
+    if (document.getElementById("hp").value) return; // honeypot
+    var ok = document.getElementById("planType").value && document.getElementById("participants").value;
+    err2.classList.toggle("show", !ok);
+    if (!ok) return;
+
+    var data = Object.fromEntries(new FormData(form).entries());
+    delete data.company_website_hp;
+
+    /* ============================================================
+       ROUTING — wire at kickoff. Example:
+       fetch("FORM_ENDPOINT_URL", {
+         method:"POST",
+         headers:{ "Content-Type":"application/json" },
+         body: JSON.stringify(data)
+       });
+       Also fire the analytics conversion event here, e.g.:
+       gtag('event','benchmark_request',{ lead_source:data.lead_source });
+       ============================================================ */
+    console.log("Benchmark request payload:", data);
+
+    form.style.display = "none";
+    document.getElementById("successBox").classList.add("show");
+    document.getElementById("successBox").scrollIntoView({behavior:"smooth",block:"center"});
+  });
+})();
+</script>
+</body>
+</html>
