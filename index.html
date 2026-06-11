@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Apex × Triskope — Website & Lead-Gen Prototypes</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --obsidian:#16140F; --ivory:#F4EFE4; --teal:#1E8A7A; --orange:#D9772F;
+    --line:#3A372E; --muted:#A39B89;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{font-family:'DM Sans',system-ui,sans-serif;background:var(--obsidian);color:var(--ivory);line-height:1.55;-webkit-font-smoothing:antialiased;min-height:100vh;display:flex;flex-direction:column;}
+  .wrap{max-width:880px;margin:0 auto;padding:0 24px;width:100%;}
+  header{padding:48px 0 0;}
+  .brand{font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--teal);}
+  h1{font-family:'Instrument Serif',serif;font-weight:400;font-size:clamp(34px,5vw,52px);line-height:1.05;margin:14px 0 10px;}
+  h1 em{font-style:italic;color:var(--orange);}
+  .sub{color:var(--muted);font-size:16px;max-width:56ch;}
+  main{flex:1;padding:44px 0 60px;}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+  @media(max-width:680px){.grid{grid-template-columns:1fr;}}
+  a.card{
+    display:block;border:1px solid var(--line);border-radius:12px;padding:24px 24px 22px;
+    text-decoration:none;color:var(--ivory);background:#1C1913;
+    transition:border-color .15s, transform .15s;
+  }
+  a.card:hover{border-color:var(--teal);transform:translateY(-2px);}
+  a.card:focus-visible{outline:3px solid var(--orange);outline-offset:2px;}
+  .k{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--orange);display:block;margin-bottom:10px;}
+  .card h2{font-family:'Instrument Serif',serif;font-weight:400;font-size:24px;margin-bottom:6px;}
+  .card p{font-size:14px;color:var(--muted);}
+  .card .go{display:inline-block;margin-top:14px;font-size:13px;font-weight:700;color:var(--teal);}
+  .flow{margin-top:36px;border-top:1px solid var(--line);padding-top:22px;font-size:14px;color:var(--muted);}
+  .flow b{color:var(--ivory);}
+  footer{border-top:1px solid var(--line);padding:20px 0 28px;font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--muted);letter-spacing:.06em;}
+  footer .wrap{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;}
+</style>
+</head>
+<body>
+
+<header class="wrap">
+  <div class="brand">Triskope · prepared for Apex Pension Strategies</div>
+  <h1>Three lenses on a <em>new</em> Apex.</h1>
+  <p class="sub">Working prototypes — illustrative content, built to show what the 60-day engagement delivers. Everything here is responsive; try it on your phone.</p>
+</header>
+
+<main class="wrap">
+  <div class="grid">
+    <a class="card" href="apex-home-concept-a.html">
+      <span class="k">Homepage · Concept A</span>
+      <h2>"Ledger"</h2>
+      <p>Institutional precision — navy, brass, and the quiet confidence of a firm that files on time. Matches the benchmark system below.</p>
+      <span class="go">View concept →</span>
+    </a>
+    <a class="card" href="apex-home-concept-b.html">
+      <span class="k">Homepage · Concept B</span>
+      <h2>"Charter"</h2>
+      <p>Private-client luxury — vault navy, champagne gold, and a serif with gravitas. The discretion-and-discipline direction.</p>
+      <span class="go">View concept →</span>
+    </a>
+    <a class="card" href="apex-fiduciary-concept-a.html">
+      <span class="k">Apex Fiduciary · Concept A</span>
+      <h2>Fiduciary — "Ledger"</h2>
+      <p>The trustee brand in the Ledger system — same DNA, its own mark. Independent ESOP trustee &amp; 3(16).</p>
+      <span class="go">View concept →</span>
+    </a>
+    <a class="card" href="apex-fiduciary-concept-b.html">
+      <span class="k">Apex Fiduciary · Concept B</span>
+      <h2>Fiduciary — "Charter"</h2>
+      <p>The trustee brand in the Charter system — vault navy, gold, and the duty stated plainly.</p>
+      <span class="go">View concept →</span>
+    </a>
+    <a class="card" href="apex-benchmark-funnel.html">
+      <span class="k">Lead engine · Landing page</span>
+      <h2>Benchmark &amp; Fee Analysis</h2>
+      <p>The lead magnet's landing page — two-step intake, source tagging, and a success flow that sets expectations.</p>
+      <span class="go">View landing page →</span>
+    </a>
+    <a class="card" href="apex-benchmark-sample-report.html">
+      <span class="k">Lead engine · The deliverable</span>
+      <h2>Sample Report Card</h2>
+      <p>What a prospect receives — five sections matching the five promises, illustrative data, clearly marked sample.</p>
+      <span class="go">View sample report →</span>
+    </a>
+  </div>
+  <p class="flow"><b>Suggested walkthrough:</b> current site → Concept A or B → "Benchmark my plan" → the landing page → the sample report. The system is wired together — Pension and Fiduciary cross-link as one brand family, and every Pension CTA leads into the funnel.</p>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>TRISKOPE LLC · THREE LENSES. ONE VISION.</span>
+    <span>SETHBASS@TRISKOPE.COM · 843-430-5201</span>
+  </div>
+</footer>
+
+</body>
+</html>

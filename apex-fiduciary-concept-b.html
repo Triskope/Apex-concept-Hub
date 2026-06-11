@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Apex Fiduciary Services | Independent ESOP Trustee & ERISA 3(16) Fiduciary</title>
+<meta name="description" content="Independent ESOP trustee services — ongoing and transactional — and ERISA 3(16) administrative fiduciary coverage. ESOP experience in every state. An affiliate of Apex Pension Strategies.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --black:#0A111C; --panel:#0F1828; --ivory:#F2EFE6; --mist:#9AA5B4;
+    --gold:#C8A85C; --gold-dim:rgba(200,168,92,.35); --hair:rgba(200,168,92,.22); --verd:#6FA08C;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{font-family:'Public Sans',system-ui,sans-serif;background:var(--black);color:var(--ivory);line-height:1.6;-webkit-font-smoothing:antialiased;}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 24px;}
+  .eyebrow{font-size:11px;font-weight:700;letter-spacing:.28em;text-transform:uppercase;color:var(--gold);}
+  h2{font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(30px,3.6vw,42px);line-height:1.1;margin-top:14px;}
+  @keyframes rise{from{opacity:0;transform:translateY(16px);}to{opacity:1;transform:none;}}
+  .rise{animation:rise .8s cubic-bezier(.2,.7,.2,1) both;}
+  .rise.d1{animation-delay:.1s;}.rise.d2{animation-delay:.2s;}.rise.d3{animation-delay:.32s;}
+  @media(prefers-reduced-motion:reduce){.rise{animation:none;}}
+
+  .concept{background:#1B1A16;color:#E2B07F;font-size:12px;letter-spacing:.1em;text-transform:uppercase;text-align:center;padding:8px 12px;font-weight:700;}
+
+  header{background:var(--black);border-bottom:1px solid var(--hair);position:sticky;top:0;z-index:50;}
+  .nav{display:flex;align-items:center;justify-content:space-between;padding:16px 0;}
+  .logo{display:flex;align-items:center;gap:14px;text-decoration:none;}
+  .logo img{height:40px;display:block;}
+  .logo .wordmark{font-family:'Cormorant Garamond',serif;font-weight:600;font-size:19px;color:var(--ivory);letter-spacing:.04em;line-height:1.1;}
+  .logo .wordmark span{display:block;font-family:'Public Sans',sans-serif;font-weight:700;font-size:9px;letter-spacing:.26em;text-transform:uppercase;color:var(--gold);margin-top:4px;}
+  .nav-links{display:flex;gap:30px;align-items:center;font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;}
+  .nav-links a{color:var(--ivory);text-decoration:none;transition:color .15s;}
+  .nav-links a:hover{color:var(--gold);}
+  .nav-cta{border:1px solid var(--gold);color:var(--gold) !important;padding:11px 20px;border-radius:2px;transition:background .18s,color .18s;}
+  .nav-cta:hover{background:var(--gold);color:var(--black) !important;}
+  @media(max-width:840px){.nav-links a:not(.nav-cta){display:none;}}
+
+  .hero{padding:110px 0 84px;text-align:center;position:relative;isolation:isolate;}
+  .hero::after{content:"";position:absolute;inset:0;z-index:-2;background:url("https://images.unsplash.com/photo-1431576901776-e539bd916ba2?q=80&w=1800&auto=format&fit=crop") center 40%/cover;opacity:.13;}
+  .hero::before{content:"";position:absolute;inset:0;pointer-events:none;z-index:-1;background:radial-gradient(ellipse 70% 55% at 50% 0%, rgba(200,168,92,.12), transparent 70%),linear-gradient(rgba(10,17,28,.45), var(--black) 92%);}
+  .crest{display:flex;align-items:center;justify-content:center;gap:16px;margin-bottom:22px;}
+  .crest::before,.crest::after{content:"";width:64px;height:1px;background:var(--gold-dim);}
+  h1{font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(42px,6.4vw,72px);line-height:1.05;letter-spacing:.005em;max-width:18ch;margin:0 auto 22px;}
+  h1 em{font-style:italic;color:var(--gold);}
+  .lede{font-size:17px;color:var(--mist);max-width:56ch;margin:0 auto 34px;}
+  .btn{display:inline-block;background:var(--gold);color:var(--black);text-decoration:none;font-weight:700;font-size:13px;letter-spacing:.14em;text-transform:uppercase;padding:17px 34px;border-radius:2px;transition:transform .18s, box-shadow .18s, background .18s;}
+  .btn:hover{transform:translateY(-1px);box-shadow:0 18px 40px -20px rgba(200,168,92,.5);background:#D4B76E;}
+  .btn:focus-visible{outline:3px solid var(--ivory);outline-offset:3px;}
+  .btn-ghost{display:inline-block;color:var(--ivory);text-decoration:none;font-weight:600;font-size:13px;letter-spacing:.14em;text-transform:uppercase;padding:17px 26px;border:1px solid rgba(242,239,230,.3);border-radius:2px;margin-left:12px;transition:border-color .18s;}
+  .btn-ghost:hover{border-color:var(--ivory);}
+  @media(max-width:520px){.btn-ghost{margin:12px 0 0;}}
+
+  .stats{display:flex;justify-content:center;margin-top:72px;border-top:1px solid var(--hair);border-bottom:1px solid var(--hair);}
+  .stat{flex:1;max-width:320px;padding:26px 18px;text-align:center;border-right:1px solid var(--hair);}
+  .stat:first-child{border-left:1px solid var(--hair);}
+  .stat b{font-family:'Cormorant Garamond',serif;font-weight:600;font-size:30px;color:var(--ivory);display:block;line-height:1.1;}
+  .stat span{font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--mist);}
+  @media(max-width:680px){.stats{flex-direction:column;}.stat{max-width:none;border:none;border-bottom:1px solid var(--hair);}.stat:first-child{border-left:none;}.stat:last-child{border-bottom:none;}}
+
+  .svc{padding:96px 0;}
+  .sec-head{text-align:center;max-width:60ch;margin:0 auto 56px;}
+  .svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--hair);border:1px solid var(--hair);}
+  @media(max-width:880px){.svc-grid{grid-template-columns:1fr;}}
+  .svc-cell{background:var(--black);padding:36px 28px;transition:background .25s;}
+  .svc-cell:hover{background:var(--panel);}
+  .svc-cell .rn{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:20px;color:var(--gold);display:block;margin-bottom:14px;}
+  .svc-cell h3{font-family:'Cormorant Garamond',serif;font-weight:600;font-size:24px;margin-bottom:10px;}
+  .svc-cell p{font-size:13.5px;color:var(--mist);margin-bottom:14px;}
+  .svc-cell ul{list-style:none;font-size:13.5px;display:grid;gap:8px;}
+  .svc-cell li{padding-left:20px;position:relative;color:var(--ivory);}
+  .svc-cell li::before{content:"·";position:absolute;left:2px;color:var(--gold);font-weight:700;font-size:20px;line-height:1;}
+
+  .vista{position:relative;margin:0 0 96px;}
+  .vista img{display:block;width:100%;height:380px;object-fit:cover;filter:saturate(.8) contrast(1.05);}
+  .vista::after{content:"";position:absolute;inset:0;background:linear-gradient(rgba(10,17,28,.6),rgba(10,17,28,.4) 40%,rgba(10,17,28,.8));}
+  .vista figcaption{position:absolute;left:50%;bottom:34px;transform:translateX(-50%);z-index:2;text-align:center;font-family:'Cormorant Garamond',serif;font-size:24px;color:var(--ivory);line-height:1.5;width:90%;}
+  @media(max-width:560px){.vista img{height:260px;}.vista figcaption{font-size:19px;}}
+
+  .when{padding:0 0 96px;}
+  .when-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:8px;}
+  @media(max-width:840px){.when-grid{grid-template-columns:1fr;}}
+  .when-card{background:var(--panel);border:1px solid var(--hair);padding:32px 28px;position:relative;}
+  .when-card::before{content:"";position:absolute;top:0;left:28px;right:28px;height:2px;background:var(--gold);}
+  .when-card h3{font-family:'Cormorant Garamond',serif;font-weight:600;font-size:23px;margin-bottom:10px;}
+  .when-card p{font-size:14px;color:var(--mist);}
+
+  .principle{padding:0 0 96px;text-align:center;}
+  .principle .mark{font-family:'Cormorant Garamond',serif;font-size:84px;line-height:.4;color:var(--gold);display:block;margin-bottom:26px;}
+  .principle p{font-family:'Cormorant Garamond',serif;font-weight:500;font-style:italic;font-size:clamp(24px,3.6vw,36px);line-height:1.25;max-width:28ch;margin:0 auto;}
+
+  .sibling{border-top:1px solid var(--hair);border-bottom:1px solid var(--hair);background:var(--panel);padding:34px 0;}
+  .sibling .wrap{display:flex;justify-content:space-between;align-items:center;gap:18px;flex-wrap:wrap;}
+  .sibling p{font-size:14.5px;color:var(--mist);}
+  .sibling b{color:var(--ivory);font-family:'Cormorant Garamond',serif;font-size:17px;}
+  .sib-link{font-weight:700;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);text-decoration:none;border-bottom:1px solid var(--gold);white-space:nowrap;padding-bottom:2px;}
+
+  .band{padding:88px 0;text-align:center;}
+  .band h2{max-width:24ch;margin:14px auto 16px;}
+  .band p{font-size:15px;color:var(--mist);max-width:54ch;margin:0 auto 30px;}
+
+  footer{border-top:1px solid var(--hair);padding:44px 0;font-size:13px;color:var(--mist);}
+  footer .wrap{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;}
+  footer b{color:var(--ivory);font-family:'Cormorant Garamond',serif;font-size:16px;letter-spacing:.03em;}
+  footer a{color:var(--ivory);text-decoration:none;}
+  footer a:hover{color:var(--gold);}
+</style>
+</head>
+<body>
+
+<div class="concept">Apex Fiduciary · Concept B · "Charter" family · Prototype — illustrative content</div>
+
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="#">
+      <img src="apex-monogram-white.png" alt="Apex monogram">
+      <span class="wordmark">APEX FIDUCIARY<span>Independent ESOP Trustee</span></span>
+    </a>
+    <nav class="nav-links">
+      <a href="#services">Services</a>
+      <a href="#when">When you need us</a>
+      <a href="apex-home-concept-b.html">Apex Pension</a>
+      <a class="nav-cta" href="mailto:info@apexpension.com">Consultation</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <div class="crest rise"><span class="eyebrow">Independent ESOP trustee · ERISA 3(16) fiduciary</span></div>
+    <h1 class="rise d1">A trustee whose only client is the <em>participant.</em></h1>
+    <p class="lede rise d2">Ongoing and transactional trustee services for employee-owned companies — with ESOP experience in every state — and ERISA 3(16) coverage for sponsors who want the responsibility carried professionally.</p>
+    <div class="rise d3">
+      <a class="btn" href="mailto:info@apexpension.com">Request a consultation</a>
+      <a class="btn-ghost" href="#services">Our services</a>
+    </div>
+  </div>
+  <div class="wrap stats rise d3">
+    <div class="stat"><b>Every state</b><span>ESOP experience</span></div>
+    <div class="stat"><b>Ongoing · Transactional</b><span>Trustee engagements</span></div>
+    <div class="stat"><b>3(16)</b><span>ERISA fiduciary services</span></div>
+  </div>
+</section>
+
+<section class="svc" id="services">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">The mandate</span>
+      <h2>Three ways we carry the responsibility</h2>
+    </div>
+    <div class="svc-grid">
+      <div class="svc-cell">
+        <span class="rn">I.</span>
+        <h3>Ongoing trustee</h3>
+        <p>Continuous, independent oversight of the employee stock ownership trust.</p>
+        <ul>
+          <li>Annual valuation review &amp; challenge</li>
+          <li>Monitoring in participants' sole interest</li>
+          <li>Board-level fiduciary judgment</li>
+        </ul>
+      </div>
+      <div class="svc-cell">
+        <span class="rn">II.</span>
+        <h3>Transactional trustee</h3>
+        <p>Independent representation when an ESOP buys, sells, or is acquired.</p>
+        <ul>
+          <li>New ESOP formations &amp; buyouts</li>
+          <li>Acquisitions of ESOP-owned companies</li>
+          <li>Negotiation backed by published expertise</li>
+        </ul>
+      </div>
+      <div class="svc-cell">
+        <span class="rn">III.</span>
+        <h3>3(16) fiduciary</h3>
+        <p>Administrative fiduciary responsibility, lifted off the sponsor.</p>
+        <ul>
+          <li>Named administrative fiduciary</li>
+          <li>Filings, notices &amp; operational duties</li>
+          <li>Sponsor risk, professionally carried</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<figure class="vista">
+  <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=1800&auto=format&fit=crop" alt="A handshake closing an agreement" loading="lazy">
+  <figcaption><span class="eyebrow">The standard</span><br>Independent at the table — so the deal stands up afterward.</figcaption>
+</figure>
+
+<section class="when" id="when">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">When you need us</span>
+      <h2>Three moments that call for independence</h2>
+    </div>
+    <div class="when-grid">
+      <div class="when-card"><h3>An owner weighing an ESOP exit</h3><p>Succession through employee ownership needs an independent trustee across the table — it's how the transaction stands up to scrutiny.</p></div>
+      <div class="when-card"><h3>A company facing a transaction</h3><p>A sale, acquisition, or refinancing involving the trust requires independent fiduciary review and negotiation.</p></div>
+      <div class="when-card"><h3>A board carrying the risk</h3><p>Directors and internal trustees holding fiduciary exposure can transfer it to a professional whose only client is the participant.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="principle">
+  <div class="wrap">
+    <span class="mark">"</span>
+    <p>Independence isn't a feature of the service. It is the service.</p>
+  </div>
+</section>
+
+<div class="sibling">
+  <div class="wrap">
+    <p><b>Apex Pension Strategies</b> — the TPA practice behind the fiduciary firm. Plan design, administration &amp; compliance since 2003.</p>
+    <a class="sib-link" href="apex-home-concept-b.html">Visit Apex Pension →</a>
+  </div>
+</div>
+
+<section class="band">
+  <div class="wrap">
+    <span class="eyebrow">Confidential · no obligation</span>
+    <h2>Speak with an independent trustee</h2>
+    <p>Whether you're an owner weighing an exit, an advisor structuring a transaction, or a board reviewing its exposure — the first conversation is confidential and costs nothing.</p>
+    <a class="btn" href="mailto:info@apexpension.com">Request a consultation</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <b>Apex Fiduciary Services, LLC</b><br>
+      (770) 410-5022 · <a href="mailto:info@apexpension.com">info@apexpension.com</a>
+    </div>
+    <div>Atlanta, Georgia · ESOP experience in every state</div>
+    <div>An affiliate of Apex Pension Strategies, Inc.</div>
+  </div>
+</footer>
+
+</body>
+</html>
